@@ -1,7 +1,8 @@
-package Refuerzo;
+package Ampliacion;
 import java.lang.reflect.Parameter;
 import java.util.Scanner;
-public class Re19{
+
+public class RadarJava{
     static void main() {
         //VARIABLE
         double distancia;
@@ -22,8 +23,5 @@ public class Re19{
         }else {
             System.out.println("Estas libre de multas");
         }
-
-
-
     }
 }
