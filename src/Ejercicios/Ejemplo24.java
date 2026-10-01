@@ -6,7 +6,7 @@ public class Ejemplo24 {
         int contador = 0;
         double media;
         int sumado = 0;
-        boolean diez;
+        boolean diez = false;
 
         System.out.println("Introduce numeros para calcular media: ");
         Scanner sc = new Scanner(System.in);
@@ -18,11 +18,15 @@ public class Ejemplo24 {
                 sumado = sumado + numero;
                 contador++;
                 if (numero == 10){
-                    System.out.println("Hay un diez");
+                    diez = true;
                 }
             }
         }while (numero != -1);
         media = sumado / contador;
         System.out.println("Media es: " + media);
+        if (diez){
+            System.out.println("Hay un diez");
+        }
+
     }
 }
