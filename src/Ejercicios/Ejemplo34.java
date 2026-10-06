@@ -4,6 +4,7 @@ public class Ejemplo34 {
     static void main() {
         int numero1;
         int numero2;
+        int resultado = 0;
 
         System.out.println("Introduce numero para ver la sucesiva: ");
         Scanner sc = new Scanner(System.in);
@@ -13,8 +14,8 @@ public class Ejemplo34 {
 
 
         for (int i = 0; i < numero2; i++){
-            System.out.println(numero1);
-
+            resultado += numero1;
+            System.out.println(resultado);
         }
 
     }
