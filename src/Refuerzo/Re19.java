@@ -1,5 +1,4 @@
 package Refuerzo;
-import java.lang.reflect.Parameter;
 import java.util.Scanner;
 public class Re19{
     static void main() {
@@ -17,13 +16,12 @@ public class Re19{
 
 
         double velocidadmedia = distancia/segundos;
-        if (velocidadmedia*3.6 > velocidadmax){
+        if (velocidadmedia * 3.6 > velocidadmax + velocidadmax * 0.2){
+            System.out.println("Has perdido puntos");
+        }else if(velocidadmedia * 3.6 > velocidadmax)
             System.out.println("Estas multado");
-        }else {
+        else{
             System.out.println("Estas libre de multas");
         }
-
-
-
     }
 }
